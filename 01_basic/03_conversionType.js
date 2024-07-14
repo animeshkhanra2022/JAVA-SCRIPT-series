@@ -1,5 +1,5 @@
 // *********************Conversion of data Type **************************
-//             number to string / boolean / number conversion 
+//^             number to string / boolean / number conversion 
 
 let score = 0
 console.log(typeof score);
@@ -8,13 +8,13 @@ let convScore = Number(score)
 console.log(typeof convScore);
 console.log(convScore);
 
-// convert to string **************************
+//~ convert to string **************************
 
 let convStr = String(score)
 console.log(typeof convStr);
 console.log(convStr);
 
-// convert to BOOLEAN **************************
+//~ convert to BOOLEAN **************************
 
 let convBo = Boolean(score)
 console.log(typeof convBo);
