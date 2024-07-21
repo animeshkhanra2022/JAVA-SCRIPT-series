@@ -14,3 +14,9 @@ chai();
 ( () => {                         // simple IIFE
     console.log("Run immediately 2");
 }) ()
+
+
+const vari= ()=> {
+    console.log("what is your name?");
+}
+console.log(vari);
