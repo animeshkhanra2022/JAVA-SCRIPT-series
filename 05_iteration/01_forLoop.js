@@ -50,5 +50,4 @@ for (let index = 1; index <= 20; index++) {
         continue
     }
    console.log(`Value of i is ${index}`);
-    
 }
