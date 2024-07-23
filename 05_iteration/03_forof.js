@@ -3,11 +3,11 @@
 
 // const arr = [9, 8, 7, 6, 5]
 
-// const arr = ['ani', 'talu', 'nami']
+const arr = ['ani', 'talu', 'nami']
 
-// for (const num of arr) {
-//     console.log(num);
-// }
+for (const num of arr) {
+    // console.log(num);
+}
 
 
 // const greetings = "hello world"
@@ -37,13 +37,13 @@ map.set('FR', 'France')
 
 
 
-const myObject = {
-    game1: 'NFS',
-    game2: 'Spiderman'
-}
+// const myObject = {
+//     game1: 'NFS',
+//     game2: 'Spiderman'
+// }
 
-for (const [key, value] of myObject) {
-    console.log(key, ':-', value);
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);
     
-}    // it dose not work because it has separate method
+// }    // it dose not work because it has separate method
 
