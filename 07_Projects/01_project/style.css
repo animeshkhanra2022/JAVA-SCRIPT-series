@@ -1,0 +1,67 @@
+html {
+    margin: 0;
+  }
+
+*{
+  margin: auto;
+
+}
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  nav{
+    display: flex;
+    background-color: #212121;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    column-gap: 10px;
+    /* justify-content: center; */
+  }
+
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #black {
+    background: rgb(34, 34, 29);
+    
+  }
+  .home, .yo {
+    display: inline;
+    height: auto;
+    width: auto;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 70px;
+    cursor: pointer;
+    margin: 100px 10px;
+    padding: 10px 10px;
+    background-color: rgb(157, 16, 222);
+    color: white;
+    
+  }
