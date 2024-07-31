@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rahda Krisna</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <!-- <input type="button" id="stop" value="stop"> -->
+    </div>
+</body>
+<script>
+    //**  EVENT ***//
+    
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+    let intervalId;
+    // const intervalId = setInterval(sayDate, 1000, "Hi");
+
+    const startChange = function(){
+            intervalId = setInterval(sayDate, 1000, "Hi");
+        }
+
+    // clearInterval(intervalId)
+    const stopChange = function(){
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+
+    
+    document.querySelector('#start').addEventListener('click',startChange)
+
+    document.querySelector('#stop').addEventListener('click',stopChange)
+
+
+</script>
+</html>

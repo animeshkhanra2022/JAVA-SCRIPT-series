@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rahda Krisna</h1>
+        <button id="stop">Stop</button>
+        <!-- <input type="button" id="stop" value="stop"> -->
+    </div>
+</body>
+<script>
+    //**  EVENT ***//
+    // console.log('Animesh');
+
+    // setTimeout(function(){
+    //     console.log('Animesh');
+    // },3000)
+
+    // const sayHi = console.log('Hey Animesh');
+
+    const sayHi = function(){
+        console.log('Hey Animesh');
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'SiyaRam'
+    }
+
+    
+
+    // setInterval(sayHi, 10000);
+    // setTimeout(sayHi, 3000)
+
+    const changeMe = setTimeout(changeText, 3000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);  //clearTime Out method
+        console.log('stopped');
+    })
+
+
+</script>
+</html>
