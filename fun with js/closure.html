@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check closure</title>
+</head>
+<body style="background-color: #414141;">
+    <button id="orange">orange</button>
+    <button id="blue">blue</button>
+</body>
+<script>
+    // laxical scoping--------------------------------------
+
+    // function outer (userName){
+    //     this.userName = userName;
+
+    //     function inner (){
+    //         console.log(userName);
+            
+    //     }
+    //     inner()
+    // }
+
+
+    // outer('Animesh')
+
+
+</script>
+<script>
+    // EXAMPLE OF CLOUSER----------------------------------------------------
+
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("blue").onclick = function(){
+        //     document.body.style.backgroundColor = `blue`
+        // }
+
+    function clickHandeler (color){
+
+        return function () {
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandeler('orange');
+    document.getElementById('blue').onclick = clickHandeler('blue');
+
+
+
+</script>
+</html>
